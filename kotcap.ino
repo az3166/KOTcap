@@ -5,7 +5,7 @@ int target;
 int pos;
 int nextpos;
 int dis;
-String comstring;
+String cmdstring;
 
 void servopulse(int servopin,int myangle)
 {
@@ -28,16 +28,16 @@ void serialEvent()
 {
 while (Serial.available())  
     {
-        comstring += char(Serial.read());
+        cmdstring += char(Serial.read());
         delay(5);
     }
 
-if (comstring.length() > 0 )
+if (cmdstring.length() > 0 )
     {
-      Serial.print("received cmd: ");Serial.println(comstring);
-        target = comstring.toInt();
+      Serial.print("received cmd: ");Serial.println(cmdstring);
+        target = cmdstring.toInt();
       Serial.print("covert to int target: ");Serial.println(target);
-        comstring = "";
+        cmdstring = "";
         clearSerialPort(); 
     }
 }
@@ -56,21 +56,21 @@ serialEvent();
 
 if (target>pos && target<=180)
 {    
- dis = target-pos;
+ dis = target -pos;
   for(int i=0;i<dis;i++)
   {
-    nextpos = pos +1;
-    servopulse(servopin,nextpos);
+    servopulse(servopin,pos+1);
     delay(20);
-    pos =nextpos;
+    pos =pos +1;
   }
 } 
 
  if (target<pos && target>=0)
 {  
  dis = pos -target;
-  for(int i=0;i<dis;i=i+1)
-  {servopulse(servopin,pos-1);
+  for(int i=0;i<dis;i++)
+  {
+    servopulse(servopin,pos-1);
     delay(20);
     pos =pos -1;
   }
