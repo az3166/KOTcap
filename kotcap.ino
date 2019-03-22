@@ -29,7 +29,7 @@ void serialEvent()
 while (Serial.available())  
     {
         comstring += char(Serial.read());
-        //delay(1);
+        delay(5);
     }
 
 if (comstring.length() > 0 )
@@ -76,9 +76,3 @@ if (target>pos && target<=180)
   }
 } 
 } 
-
-
-
-
-
- 
