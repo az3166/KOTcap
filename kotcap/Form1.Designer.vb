@@ -41,7 +41,7 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("等线", 10.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Button1.Location = New System.Drawing.Point(107, 24)
+        Me.Button1.Location = New System.Drawing.Point(104, 12)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(82, 27)
         Me.Button1.TabIndex = 0
@@ -51,7 +51,7 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("等线", 10.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Button2.Location = New System.Drawing.Point(195, 24)
+        Me.Button2.Location = New System.Drawing.Point(192, 12)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(82, 27)
         Me.Button2.TabIndex = 3
@@ -63,7 +63,7 @@ Partial Class Form1
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.Font = New System.Drawing.Font("等线", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(23, 27)
+        Me.ComboBox1.Location = New System.Drawing.Point(20, 15)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(79, 21)
         Me.ComboBox1.TabIndex = 0
@@ -87,7 +87,7 @@ Partial Class Form1
         Me.Button4.Font = New System.Drawing.Font("等线", 10.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Button4.Location = New System.Drawing.Point(184, 27)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(82, 72)
+        Me.Button4.Size = New System.Drawing.Size(82, 70)
         Me.Button4.TabIndex = 8
         Me.Button4.Text = "关闭" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.Button4.UseVisualStyleBackColor = True
@@ -109,7 +109,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button5)
-        Me.GroupBox1.Location = New System.Drawing.Point(10, 57)
+        Me.GroupBox1.Location = New System.Drawing.Point(7, 45)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(279, 123)
         Me.GroupBox1.TabIndex = 7
@@ -141,17 +141,17 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("等线", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.Label1.Location = New System.Drawing.Point(227, 183)
+        Me.Label1.Location = New System.Drawing.Point(208, 171)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(62, 12)
+        Me.Label1.Size = New System.Drawing.Size(78, 12)
         Me.Label1.TabIndex = 8
-        Me.Label1.Text = "beta 2019.3"
+        Me.Label1.Text = "beta 20190220"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(301, 202)
+        Me.ClientSize = New System.Drawing.Size(296, 187)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ComboBox1)
