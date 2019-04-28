@@ -1,4 +1,4 @@
 # KOTcap
 Robotic lens cap for telescope
 
---imufu KOTTOS
+-- http://bbs.imufu.cn KOTTOS
